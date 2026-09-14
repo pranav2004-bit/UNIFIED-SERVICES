@@ -1,0 +1,94 @@
+:root {
+  --bg: #fff7ed;
+  --bg-accent: #ffedd5;
+  --text: #1c1917;
+  --muted: #78716c;
+  --accent: #ea580c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, var(--bg-accent), var(--bg));
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem 1.5rem;
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p.message {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+p.message strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.thanks {
+  font-size: 0.95rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.message {
+    font-size: 1.1rem;
+  }
+
+  .thanks {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 560px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  p.message {
+    font-size: 1.25rem;
+  }
+
+  .thanks {
+    font-size: 1.1rem;
+  }
+}
