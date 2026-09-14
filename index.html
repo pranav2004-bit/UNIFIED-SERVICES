@@ -6,11 +6,11 @@
 <title>Unified Services</title>
 <style>
   :root {
-    --bg: #0f172a;
-    --bg-accent: #1e293b;
-    --text: #f8fafc;
-    --muted: #94a3b8;
-    --accent: #38bdf8;
+    --bg: #fff7ed;
+    --bg-accent: #ffedd5;
+    --text: #1c1917;
+    --muted: #78716c;
+    --accent: #ea580c;
   }
 
   * {
@@ -41,19 +41,6 @@
     padding: 2rem 1.5rem;
   }
 
-  .badge {
-    display: inline-block;
-    padding: 0.35rem 0.9rem;
-    border-radius: 999px;
-    background: rgba(56, 189, 248, 0.12);
-    color: var(--accent);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
   h1 {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -66,6 +53,11 @@
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+  }
+
+  p.message strong {
+    color: var(--text);
+    font-weight: 700;
   }
 
   .thanks {
@@ -82,6 +74,10 @@
     p.message {
       font-size: 1.1rem;
     }
+
+    .thanks {
+      font-size: 1rem;
+    }
   }
 
   @media (min-width: 1024px) {
@@ -92,14 +88,21 @@
     h1 {
       font-size: 2.4rem;
     }
+
+    p.message {
+      font-size: 1.25rem;
+    }
+
+    .thanks {
+      font-size: 1.1rem;
+    }
   }
 </style>
 </head>
 <body>
   <main class="card">
-    <span class="badge">Coming Soon</span>
     <h1>Welcome</h1>
-    <p class="message">The actual application will be updated live by this weekend.</p>
+    <p class="message">The actual <strong>platform</strong> goes live this weekend.</p>
     <p class="thanks">Thank you</p>
   </main>
 </body>
